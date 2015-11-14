@@ -44,7 +44,8 @@ gbmCrossVal <- function(cv.folds, nTrain, n.cores,
 
   list(error=cv.error,
        predictions=predictions,
-       all.model=all.model)
+       all.model=all.model,
+       cv.models=cv.models)
 }
 
 ## Get the gbm cross-validation error

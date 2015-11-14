@@ -560,6 +560,7 @@ gbm <- function(formula = formula(data),
      cv.error <- cv.results$error
      p        <- cv.results$predictions
      gbm.obj  <- cv.results$all.model
+     gbm.obj$cv.models <- cv.results$cv.models
    } 
 
    else {
